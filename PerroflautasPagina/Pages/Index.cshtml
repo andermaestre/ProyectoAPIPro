@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="cabecero">
+
+</div>
+<div id="content">
+
+</div>
+<div id="formulario">
+
+</div>
+<script>
+    function EscapeRooms() {
+            var tabla = '<table id="table">';
+            tabla += "<th></th>";
+
+            tabla += "@foreach (var er in Model.perroflautas) { <tr><td>@er.Id</td><td>@er.Nombre</td><td>@er.Direccion</td><td>@er.OrientacionIdeologica</td><td>@er.Posesiones</td><td>@er.GritoComun</td><td>@er.GritoAparea</td></tr> } ";
+
+            tabla += "</table>";
+                content.innerHTML = tabla;
+            }
+</script>

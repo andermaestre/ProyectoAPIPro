@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_Andermaestre_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Perroflautas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="OrientacionIdeologica" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Posesiones" Type="varchar" MaxLength="50" />
+    <Property Name="GritoComun" Type="varchar" MaxLength="50" />
+    <Property Name="GritoAparea" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="DAM_Andermaestre_DEVModelStoreContainer">
+    <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Perroflautas].[Id] AS [Id], 
+    [Perroflautas].[Nombre] AS [Nombre], 
+    [Perroflautas].[OrientacionIdeologica] AS [OrientacionIdeologica], 
+    [Perroflautas].[Direccion] AS [Direccion], 
+    [Perroflautas].[Posesiones] AS [Posesiones], 
+    [Perroflautas].[GritoComun] AS [GritoComun], 
+    [Perroflautas].[GritoAparea] AS [GritoAparea]
+    FROM [dbo].[Perroflautas] AS [Perroflautas]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

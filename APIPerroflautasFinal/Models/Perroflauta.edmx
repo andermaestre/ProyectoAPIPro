@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DAM_Andermaestre_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Perroflautas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="OrientacionIdeologica" Type="varchar" MaxLength="50" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Posesiones" Type="varchar" MaxLength="50" />
+          <Property Name="GritoComun" Type="varchar" MaxLength="50" />
+          <Property Name="GritoAparea" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="DAM_Andermaestre_DEVModelStoreContainer">
+          <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Perroflautas].[Id] AS [Id], 
+    [Perroflautas].[Nombre] AS [Nombre], 
+    [Perroflautas].[OrientacionIdeologica] AS [OrientacionIdeologica], 
+    [Perroflautas].[Direccion] AS [Direccion], 
+    [Perroflautas].[Posesiones] AS [Posesiones], 
+    [Perroflautas].[GritoComun] AS [GritoComun], 
+    [Perroflautas].[GritoAparea] AS [GritoAparea]
+    FROM [dbo].[Perroflautas] AS [Perroflautas]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DAM_Andermaestre_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Perroflautas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OrientacionIdeologica" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Posesiones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GritoComun" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GritoAparea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Contexto" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DAM_Andermaestre_DEVModelStoreContainer" CdmEntityContainer="Contexto">
+          <EntitySetMapping Name="Perroflautas">
+            <EntityTypeMapping TypeName="DAM_Andermaestre_DEVModel.Perroflautas">
+              <MappingFragment StoreEntitySet="Perroflautas">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="OrientacionIdeologica" ColumnName="OrientacionIdeologica" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Posesiones" ColumnName="Posesiones" />
+                <ScalarProperty Name="GritoComun" ColumnName="GritoComun" />
+                <ScalarProperty Name="GritoAparea" ColumnName="GritoAparea" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

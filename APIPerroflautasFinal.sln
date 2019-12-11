@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIPerroflautasFinal", "APIPerroflautasFinal\APIPerroflautasFinal.csproj", "{831BA9E0-A2F2-4CA7-B824-1ED89B88AED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerroflautasPagina", "PerroflautasPagina\PerroflautasPagina.csproj", "{8A4E5552-FDF6-4D66-8873-A09AB228FF15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{831BA9E0-A2F2-4CA7-B824-1ED89B88AED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831BA9E0-A2F2-4CA7-B824-1ED89B88AED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831BA9E0-A2F2-4CA7-B824-1ED89B88AED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831BA9E0-A2F2-4CA7-B824-1ED89B88AED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4E5552-FDF6-4D66-8873-A09AB228FF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4E5552-FDF6-4D66-8873-A09AB228FF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4E5552-FDF6-4D66-8873-A09AB228FF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4E5552-FDF6-4D66-8873-A09AB228FF15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5A978A-5964-4301-B6AF-65CCA2E1972E}
+	EndGlobalSection
+EndGlobal
