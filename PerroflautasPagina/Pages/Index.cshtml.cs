@@ -26,9 +26,24 @@ namespace PerroflautasPagina.Pages
             perroflautas.ToList();
         }
 
-        public void onPost()
+        public void OnPost(int Id, string Nombre, string OrientacionIdeologica, string Direccion, string Posesiones, string GritoComun, string GritoAparea)
         {
+            var client = new RestClient("https://localhost:44322/api/Perroflautas");
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("cache-control", "no-cache");
+            request.AddHeader("content-type", "application/x-www-form-urlencoded");
 
+           
+
+            request.AddParameter("Id", Id);
+            request.AddParameter("Nombre", Nombre);
+            request.AddParameter("OrientacionIdeologica", OrientacionIdeologica);
+            request.AddParameter("Direccion", Direccion);
+            request.AddParameter("Posesiones", Posesiones);
+            request.AddParameter("GritoComun", GritoComun);
+            request.AddParameter("GritoAparea", GritoAparea);
+            IRestResponse response = client.Post(request);
+            
         }
 
     }

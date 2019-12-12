@@ -3,15 +3,42 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<style>
+    #tableron {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+    #tableron td, #tableron th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #tableron tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #tableron tr:hover {
+        background-color: #ddd;
+    }
+
+    #tableron th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
 <div id="cabecero">
 
 </div>
-<div id="content" onload="perroflautas()">
+<div id="content">
 
 </div>
 <div id="formulario" >
-    <form action="post">
+    <form method="post">
         Nombre<input type="text" id="txtNombre" />
         Id<input type="text" id="txtId" />
         Orientacion<input type="text" id="txtOrientacion" />
@@ -19,24 +46,26 @@
         Posesiones<input type="text" id="txtPosesiones" />
         Grito-Comun<input type="text" id="txtGritComun" />
         Grito-Apareamiento<input type="text" id="txtGritApa" />
-        <button>Agregar</button>
+        <button type="submit">Agregar</button>
     </form>
 </div>
 <script>
     function perroflautas() {
-            var tabla = '<table id="table">';
-            tabla += "<th></th>";
+            var tabla = '<table id="tableron" class="tableron">';
+            tabla += "<tr><th>Id</th><th>Nombre</th><th>Direccion</th><th>Orientacion Ideologica</th><th>Posesiones</th><th>Grito Comun</th><th>Grito de Apareamiento</th></tr>";
 
-            tabla += "@foreach (var er in Model.perroflautas) { <tr><td>@er.Id</td><td>@er.Nombre</td><td>@er.Direccion</td><td>@er.OrientacionIdeologica</td><td>@er.Posesiones</td><td>@er.GritoComun</td><td>@er.GritoAparea</td></tr> } ";
+            tabla += `@foreach (var er in Model.perroflautas) {
+                        <tr>
+                            <td>@er.Id</td>
+                            <td>@er.Nombre</td>
+                            <td>@er.Direccion</td>
+                            <td>@er.OrientacionIdeologica</td>
+                            <td>@er.Posesiones</td>
+                            <td>@er.GritoComun</td>
+                            <td>@er.GritoAparea</td>
+                        </tr> }`;
 
             tabla += "</table>";
-                content.innerHTML = tabla;
+                document.getElementById("content").innerHTML = tabla;
             }
 </script>
-public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string OrientacionIdeologica { get; set; }
-        public string Direccion { get; set; }
-        public string Posesiones { get; set; }
-        public string GritoComun { get; set; }
-        public string GritoAparea { get; set; }
