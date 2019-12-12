@@ -25,5 +25,11 @@ namespace PerroflautasPagina.Pages
             perroflautas = JsonConvert.DeserializeObject<List<Perroflauta>>(response.Content);
             perroflautas.ToList();
         }
+
+        public void onPost()
+        {
+
+        }
+
     }
 }
