@@ -13,10 +13,10 @@ namespace APIPerroflautasFinal.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Contexto : DbContext
+    public partial class Contextum : DbContext
     {
-        public Contexto()
-            : base("name=Contexto")
+        public Contextum()
+            : base("name=Contextum")
         {
         }
     

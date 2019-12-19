@@ -39,8 +39,8 @@
 </div>
 <div id="formulario" >
     <form method="post">
-        Nombre<input type="text" id="txtNombre" />
         Id<input type="text" id="txtId" />
+        Nombre<input type="text" id="txtNombre" />
         Orientacion<input type="text" id="txtOrientacion" />
         Direccion<input type="text" id="txtDireccion" />
         Posesiones<input type="text" id="txtPosesiones" />
@@ -53,6 +53,8 @@
     function perroflautas() {
             var tabla = '<table id="tableron" class="tableron">';
             tabla += "<tr><th>Id</th><th>Nombre</th><th>Direccion</th><th>Orientacion Ideologica</th><th>Posesiones</th><th>Grito Comun</th><th>Grito de Apareamiento</th></tr>";
+            
+
 
             tabla += `@foreach (var er in Model.perroflautas) {
                         <tr>
@@ -67,5 +69,6 @@
 
             tabla += "</table>";
                 document.getElementById("content").innerHTML = tabla;
-            }
+    }
+    
 </script>

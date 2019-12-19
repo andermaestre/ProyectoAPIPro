@@ -14,7 +14,7 @@ namespace APIPerroflautasFinal.Controllers
 {
     public class PerroflautasController : ApiController
     {
-        private Contexto db = new Contexto();
+        private Contextum db = new Contextum();
 
         // GET: api/Perroflautas
         public IQueryable<Perroflautas> GetPerroflautas()

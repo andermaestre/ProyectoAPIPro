@@ -30,9 +30,10 @@ namespace PerroflautasPagina.Pages
         {
             var client = new RestClient("https://localhost:44322/api/Perroflautas");
             var request = new RestRequest(Method.POST);
+
+
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("content-type", "application/x-www-form-urlencoded");
-
            
 
             request.AddParameter("Id", Id);

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="48d78391e8df4c33adea51fa76c9541f" Name="Diagram1">
+      <Diagram DiagramId="3dc04bdc65ce43178b600c28858b150e" Name="Diagram1">
         <EntityTypeShape EntityType="DAM_Andermaestre_DEVModel.Perroflautas" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

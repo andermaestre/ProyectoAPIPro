@@ -168,23 +168,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Perroflauta.Context.cs">
+    <Compile Include="Models\Perroflautas.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Perroflauta.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Perroflauta.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Perroflauta.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Perroflauta.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Perroflauta.edmx</DependentUpon>
+      <DependentUpon>Perroflautas.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Perroflautas.cs">
-      <DependentUpon>Perroflauta.tt</DependentUpon>
+      <DependentUpon>Perroflautas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Perroflautas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Perroflautas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Perroflautas1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Perroflautas.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,15 +197,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Perroflauta.Context.tt">
+    <Content Include="Models\Perroflautas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Perroflauta.Context.cs</LastGenOutput>
-      <DependentUpon>Perroflauta.edmx</DependentUpon>
+      <DependentUpon>Perroflautas.edmx</DependentUpon>
+      <LastGenOutput>Perroflautas.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Perroflauta.tt">
+    <Content Include="Models\Perroflautas.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Perroflauta.edmx</DependentUpon>
-      <LastGenOutput>Perroflauta.cs</LastGenOutput>
+      <DependentUpon>Perroflautas.edmx</DependentUpon>
+      <LastGenOutput>Perroflautas1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -228,12 +228,12 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\Perroflauta.edmx">
+    <EntityDeploy Include="Models\Perroflautas.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Perroflauta.Designer.cs</LastGenOutput>
+      <LastGenOutput>Perroflautas.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Perroflauta.edmx.diagram">
-      <DependentUpon>Perroflauta.edmx</DependentUpon>
+    <Content Include="Models\Perroflautas.edmx.diagram">
+      <DependentUpon>Perroflautas.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

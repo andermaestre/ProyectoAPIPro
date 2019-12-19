@@ -11826,11 +11826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andermaestre\\source\\repos\\APIPerroflautasFinal\\PerroflautasPagina\\PerroflautasPagina.csproj",
+      "projectUniqueName": "C:\\Users\\andermaestre\\Desktop\\Nueva carpeta\\ProyectoAPIPro\\PerroflautasPagina\\PerroflautasPagina.csproj",
       "projectName": "PerroflautasPagina",
-      "projectPath": "C:\\Users\\andermaestre\\source\\repos\\APIPerroflautasFinal\\PerroflautasPagina\\PerroflautasPagina.csproj",
+      "projectPath": "C:\\Users\\andermaestre\\Desktop\\Nueva carpeta\\ProyectoAPIPro\\PerroflautasPagina\\PerroflautasPagina.csproj",
       "packagesPath": "C:\\Users\\andermaestre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andermaestre\\source\\repos\\APIPerroflautasFinal\\PerroflautasPagina\\obj\\",
+      "outputPath": "C:\\Users\\andermaestre\\Desktop\\Nueva carpeta\\ProyectoAPIPro\\PerroflautasPagina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

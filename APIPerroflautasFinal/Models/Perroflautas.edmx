@@ -5,8 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="DAM_Andermaestre_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
         <EntityType Name="Perroflautas">
           <Key>
             <PropertyRef Name="Id" />
@@ -20,17 +18,7 @@ advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no ti
           <Property Name="GritoAparea" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="DAM_Andermaestre_DEVModelStoreContainer">
-          <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Perroflautas].[Id] AS [Id], 
-    [Perroflautas].[Nombre] AS [Nombre], 
-    [Perroflautas].[OrientacionIdeologica] AS [OrientacionIdeologica], 
-    [Perroflautas].[Direccion] AS [Direccion], 
-    [Perroflautas].[Posesiones] AS [Posesiones], 
-    [Perroflautas].[GritoComun] AS [GritoComun], 
-    [Perroflautas].[GritoAparea] AS [GritoAparea]
-    FROM [dbo].[Perroflautas] AS [Perroflautas]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -49,7 +37,7 @@ advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no ti
           <Property Name="GritoComun" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="GritoAparea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="Contexto" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Contextum" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Perroflautas" EntityType="Self.Perroflautas" />
         </EntityContainer>
       </Schema>
@@ -57,7 +45,7 @@ advertencia 6002: La tabla o vista 'DAM_Andermaestre_DEV.dbo.Perroflautas' no ti
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DAM_Andermaestre_DEVModelStoreContainer" CdmEntityContainer="Contexto">
+        <EntityContainerMapping StorageEntityContainer="DAM_Andermaestre_DEVModelStoreContainer" CdmEntityContainer="Contextum">
           <EntitySetMapping Name="Perroflautas">
             <EntityTypeMapping TypeName="DAM_Andermaestre_DEVModel.Perroflautas">
               <MappingFragment StoreEntitySet="Perroflautas">
